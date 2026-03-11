@@ -1,0 +1,58 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx/client-side-web-part-manifest.schema.json",
+  "id": "a98909c8-452e-4a26-b794-e515f279e05f",
+  "alias": "ClickableBubbleWebPart",
+  "componentType": "WebPart",
+
+  // The "*" signifies that the version should be taken from the package.json
+  "version": "*",
+  "manifestVersion": 2,
+
+  // If true, the component can only be installed on sites where Custom Script is allowed.
+  // Components that allow authors to embed arbitrary script code should set this to true.
+  // https://support.office.com/en-us/article/Turn-scripting-capabilities-on-or-off-1f2c515f-5d7e-448a-9fd7-835da935584f
+  "requiresCustomScript": false,
+  "supportedHosts": ["SharePointWebPart", "TeamsPersonalApp", "TeamsTab", "SharePointFullPage"],
+  "supportsThemeVariants": true,
+
+  "preconfiguredEntries": [{
+    "groupId": "5c03119e-3074-46fd-976b-c60198311f70", // Advanced
+    "group": { "default": "Advanced" },
+    "title": { "default": "ClickableBubble" },
+    "description": { "default": "A customizable bubble/pill button with icons and flexible styling" },
+    "officeFabricIconFontName": "Page",
+    "properties": {
+      "preset": "none",
+      "text": "Click here",
+      "linkUrl": "",
+      "openInNewTab": false,
+      "isClickable": true,
+      "showIcon": false,
+      "iconPosition": "left",
+      "iconType": "fluent",
+      "fluentIconName": "Link",
+      "customIconUrl": "",
+      "iconSize": 16,
+      "iconColor": "#605e5c",
+      "showExternalLinkIcon": false,
+      "externalLinkIconPosition": "right",
+      "backgroundColor": "#ffffff",
+      "textColor": "#323130",
+      "borderColor": "#edebe9",
+      "borderWidth": 1,
+      "borderRadius": 16,
+      "hoverBackgroundColor": "#f3f2f1",
+      "hoverTextColor": "#201f1e",
+      "hoverBorderColor": "#0078d4",
+      "paddingVertical": 8,
+      "paddingHorizontal": 20,
+      "fontSize": 14,
+      "fontWeight": "normal",
+      "showShadow": false,
+      "shadowIntensity": "light",
+      "allowFreePositioning": false,
+      "positionX": 0,
+      "positionY": 0
+    }
+  }]
+}

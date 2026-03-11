@@ -1,0 +1,71 @@
+.clickableBubble {
+  display: inline-flex;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+
+  &:focus-visible {
+    outline: 2px solid #0078d4;
+    outline-offset: 2px;
+  }
+
+  &[data-clickable='true']:hover {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  }
+}
+
+.textWithInlineIcon {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.bubbleContainer {
+  position: relative;
+  display: inline-block;
+  width: fit-content;
+  min-height: 0;
+}
+
+.freePositioning {
+  min-height: 0;
+}
+
+.shadowNone {
+  box-shadow: none;
+}
+
+.shadowLight {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+.shadowMedium {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+.shadowStrong {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 768px) {
+  .clickableBubble {
+    font-size: 13px !important;
+    padding: 6px 16px !important;
+  }
+
+  .bubbleContainer.freePositioning {
+    .clickableBubble {
+      position: relative !important;
+      left: auto !important;
+      top: auto !important;
+    }
+  }
+}

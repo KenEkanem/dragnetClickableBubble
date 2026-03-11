@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "dragnet-clickable-bubble-client-side-solution",
+    "id": "c535a499-31ad-4945-8281-6c10ad98eda4",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "Dragnet Nigeria",
+      "websiteUrl": "https://www.dragnet.ng",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "Customizable bubble and pill buttons for SharePoint pages."
+      },
+      "longDescription": {
+        "default": "Create clickable bubble and pill buttons with icons, hover effects, and optional free positioning."
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "dragnet-clickable-bubble Feature",
+        "description": "The feature that activates elements of the dragnet-clickable-bubble solution.",
+        "id": "1004ced2-c218-456b-841a-88867b5ea219",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/dragnet-clickable-bubble.sppkg"
+  }
+}

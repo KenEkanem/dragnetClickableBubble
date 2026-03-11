@@ -1,0 +1,25 @@
+{
+  "@microsoft/generator-sharepoint": {
+    "whichFolder": "subdir",
+    "solutionName": "DragnetClickableBubble",
+    "environment": "spo",
+    "packageManager": "npm",
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "componentType": "webpart",
+    "template": "react",
+    "componentName": "ClickableBubble",
+    "componentDescription": "A customizable bubble/pill button with icons and flexible styling",
+    "plusBeta": false,
+    "isCreatingSolution": true,
+    "nodeVersion": "18.20.5",
+    "sdksVersions": {
+      "@microsoft/microsoft-graph-client": "3.0.2",
+      "@microsoft/teams-js": "2.24.0"
+    },
+    "version": "1.20.0",
+    "libraryName": "dragnet-clickable-bubble",
+    "libraryId": "c535a499-31ad-4945-8281-6c10ad98eda4",
+    "solutionShortDescription": "DragnetClickableBubble description"
+  }
+}
